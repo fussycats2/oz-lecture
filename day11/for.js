@@ -3,7 +3,7 @@ for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 console.log("=================")
-console.log("////////////////")
+console.log("//////////")
 
 // 1부터 5까지 콘솔찍는 코드
 for (let i = 1; i < 6; i++) {
@@ -37,3 +37,46 @@ for (let i = 0; i < arr.length; i++) {
     console.log(fruit);
 }
 console.log("=================")
+
+// break와 continue
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+    if (i === 5) break;     
+}
+console.log("=================")
+
+for (let i = 0; i < 10; i++) {
+    if (i === 0) continue;
+    console.log(i);
+}
+console.log("=================")
+
+// for in
+arr = ["banana", "apple", "orange"];
+for (idx in arr) {
+    let fruit = arr[idx];
+    console.log(fruit);
+    if(fruit === "banana")  {
+        console.log("monkey!!!!");
+        continue;
+    }
+    if(fruit === "orange") {
+        break;
+    }
+    console.log("oz!!")
+}
+
+// for in (객체)
+let obj = {
+    name: "철수",
+    age: 20,
+}
+for (let key in obj) {
+    console.log(`key: ${key}`);
+    console.log(`val: ${obj[key]}`);
+}
+
+// for of (배열)
+for (item of arr) {
+    console.log(item);
+}
