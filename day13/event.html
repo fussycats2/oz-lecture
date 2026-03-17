@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Event</title>
+  </head>
+  <body>
+    <input id="text-input" type="text" />
+    <button onclick="clickEvent()">클릭</button>
+    <script>
+        function clickEvent() {
+            const input = document.getElementById("text-input");
+            const container = document.getElementById("container");
+            const text = input.value;
+            const p = document.createElement("p");
+            p.textContent = text;
+            container.appendChild(p);
+        }
+    </script>
+  </body>
+</html>
