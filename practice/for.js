@@ -18,8 +18,14 @@ var sum = 0;
 for(var i = 1; i < 11; i++) {
     sum = sum + 1;
 }
-console.log(sum);
+
 
 for(var i = 2; i < 10; i++) {
-    console.log(`2 * ${i} = ${2 * i}`)
 }
+
+function logMessage() {
+  return "출력만 하고 반환도 합니다.";
+}
+
+const result = logMessage(); // "출력만 하고 반환은 없습니다." 출력
+console.log(result);         // undefined
